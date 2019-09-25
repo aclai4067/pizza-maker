@@ -1,3 +1,18 @@
 body{
     background-color: cadetblue;
 }
+
+#orderBtn{
+    display: block;
+    margin: auto;
+}
+
+#totalPrice{
+    color: whitesmoke;
+}
+
+#summary{
+    background-color: whitesmoke;
+    border-radius: 5px;
+    color: cadetblue;
+}
