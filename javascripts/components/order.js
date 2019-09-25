@@ -1,5 +1,5 @@
 import cheese from './cheese.js';
-// import meat from './meat.js';
+import meat from './meat.js';
 // import veggie from './veggie.js';
 import utilities from '../helpers/utilities.js';
 
@@ -26,10 +26,10 @@ const createFinalOrder = (toppings) => {
 
 const createOrderEvent = () => {
     const selectedCheeses = cheese.getSelectedCheeses();
-    // const selectedMeats = meat.getSelectedMeats();
+    const selectedMeats = meat.getSelectedMeats();
     // const selectedVeggies = veggies.getSelectedVeggies();
-    // const allToppings = selectedCheeses.concat(selectedMeats, selectedVeggies);
-    createFinalOrder(selectedCheeses);
+    const allToppings = selectedCheeses.concat(selectedMeats);
+    createFinalOrder(allToppings);
 };
 
 const printOrderBtn = () => {
