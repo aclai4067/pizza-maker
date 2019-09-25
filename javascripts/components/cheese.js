@@ -33,6 +33,21 @@ const cheeseArr = [
     }
 ];
 
+
+const getSelectedCheeses = () => {
+    const selectedCheeseArr = [];
+    const cheeseCheckbox = document.getElementsByClassName('cheeseItem');
+    for (let n = 0; n < cheeseArr.length; n++){
+        const selectedCheeseId = cheeseCheckbox[n].id;
+            for(let x = 0; x < cheeseArr.length; x++){
+                if(cheeseCheckbox[n].checked && selectedCheeseId === cheeseArr[x].id){
+            selectedCheeseArr.push(cheeseArr[x]);
+            };
+        };
+    };
+    return selectedCheeseArr;
+};
+
 const printCheeseOptions = () => {
     let domString = `
         <h5>Cheese</h5>
@@ -41,7 +56,7 @@ const printCheeseOptions = () => {
     for(let i = 0; i < cheeseArr.length; i++){
         domString += `
             <div class="custom-control custom-switch">
-                <input type="checkbox" class="custom-control-input" id="${cheeseArr[i].id}">
+                <input type="checkbox" class="cheeseItem custom-control-input" id="${cheeseArr[i].id}">
                 <label class="custom-control-label" for="${cheeseArr[i].id}">${cheeseArr[i].type}</label>
             </div>
         `
@@ -50,4 +65,6 @@ const printCheeseOptions = () => {
     utilities.printToDom('cheese-counter', domString);
 };
 
-export default { printCheeseOptions }; 
+
+
+export default { printCheeseOptions, getSelectedCheeses }; 
