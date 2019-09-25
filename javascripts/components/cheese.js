@@ -2,28 +2,34 @@ import utilities from '../helpers/utilities.js';
 
 const cheeseArr = [
     {
+        id: 'cheese0',
         type: 'cheddar',
-        price: 
+        price: 0.50
     }, 
     {
+        id: 'cheese1',
         type: 'feta',
-        price: 
+        price: 0.75
     }, 
     {
+        id: 'cheese2',
         type: 'blue',
-        price: 
+        price: 0.75
     }, 
     {
+        id: 'cheese3',
         type: 'cojita',
-        price: 
+        price: 0.75
     }, 
     {
+        id: 'cheese4',
         type: 'motz',
-        price: 
+        price: 0.00
     }, 
     {
+        id: 'cheese5',
         type: '🐐',
-        price: 
+        price: 0.75
     }
 ];
 
@@ -35,8 +41,8 @@ const printCheeseOptions = () => {
     for(let i = 0; i < cheeseArr.length; i++){
         domString += `
             <div class="custom-control custom-switch">
-                <input type="checkbox" class="custom-control-input" id="customSwitch${i+1}">
-                <label class="custom-control-label" for="customSwitch${i+1}">${cheeseArr[i].type}</label>
+                <input type="checkbox" class="custom-control-input" id="${cheeseArr[i].id}">
+                <label class="custom-control-label" for="${cheeseArr[i].id}">${cheeseArr[i].type}</label>
             </div>
         `
     }
