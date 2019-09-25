@@ -3,32 +3,32 @@ import utilities from '../helpers/utilities.js';
 const cheeseArr = [
     {
         id: 'cheese0',
-        type: 'cheddar',
+        type: 'Cheddar',
         price: 0.50
     }, 
     {
         id: 'cheese1',
-        type: 'feta',
+        type: 'Feta',
         price: 0.75
     }, 
     {
         id: 'cheese2',
-        type: 'blue',
+        type: 'Blue',
         price: 0.75
     }, 
     {
         id: 'cheese3',
-        type: 'cojita',
+        type: 'Cojita',
         price: 0.75
     }, 
     {
         id: 'cheese4',
-        type: 'motz',
+        type: 'Motz',
         price: 0.00
     }, 
     {
         id: 'cheese5',
-        type: '🐐',
+        type: '🐐 🧀',
         price: 0.75
     }
 ];

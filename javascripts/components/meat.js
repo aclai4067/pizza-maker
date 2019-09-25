@@ -3,32 +3,32 @@ import utilities from '../helpers/utilities.js';
 const meatArr = [
     {
         id: 'meat0',
-        type: 'pepperoni',
+        type: 'Pepperoni',
         price: 0.50
     }, 
     {
         id: 'meat1',
-        type: 'sausage',
+        type: 'Sausage',
         price: 0.75
     }, 
     {
         id: 'meat2',
-        type: 'grilled chicken',
+        type: 'Grilled Chicken',
         price: 1.75
     }, 
     {
         id: 'meat3',
-        type: 'hot chicken',
+        type: 'Hot Chicken',
         price: 3.00
     }, 
     {
         id: 'meat4',
-        type: 'pulled pork',
+        type: 'Pulled Pork',
         price: 2.00
     }, 
     {
         id: 'meat5',
-        type: '🐐',
+        type: '🐐 🍖',
         price: 2.75
     }
 ];
