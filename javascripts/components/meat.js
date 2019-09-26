@@ -4,32 +4,32 @@ const meatArr = [
     {
         id: 'meat0',
         type: 'Pepperoni',
-        price: 0.50
+        price: 50
     }, 
     {
         id: 'meat1',
         type: 'Sausage',
-        price: 0.75
+        price: 75
     }, 
     {
         id: 'meat2',
         type: 'Grilled Chicken',
-        price: 1.75
+        price: 175
     }, 
     {
         id: 'meat3',
         type: 'Hot Chicken',
-        price: 3.00
+        price: 300
     }, 
     {
         id: 'meat4',
         type: 'Pulled Pork',
-        price: 2.00
+        price: 200
     }, 
     {
         id: 'meat5',
         type: '🐐 🍖',
-        price: 2.75
+        price: 275
     }
 ];
 

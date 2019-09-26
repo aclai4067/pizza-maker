@@ -4,32 +4,32 @@ const cheeseArr = [
     {
         id: 'cheese0',
         type: 'Cheddar',
-        price: 0.50
+        price: 50
     }, 
     {
         id: 'cheese1',
         type: 'Feta',
-        price: 0.75
+        price: 75
     }, 
     {
         id: 'cheese2',
         type: 'Blue',
-        price: 0.75
+        price: 75
     }, 
     {
         id: 'cheese3',
         type: 'Cojita',
-        price: 0.75
+        price: 75
     }, 
     {
         id: 'cheese4',
         type: 'Motz',
-        price: 0.00
+        price: 0
     }, 
     {
         id: 'cheese5',
         type: '🐐 🧀',
-        price: 0.75
+        price: 75
     }
 ];
 

@@ -11,20 +11,20 @@ const createFinalOrder = (toppings) => {
             <h4 class='col-6 text-center'>$5.00</h4>
         </div>
     `;
-    let total = 5;
+    let total = 500;
     for(let i = 0; i < toppings.length; i++){
         total += toppings[i].price;
         toppingString += `
         <div class='row d-flex'>
             <h4 class='col-6 text-center'>${toppings[i].type}</h4>
-            <h4 class='col-6 text-center'>$${(toppings[i].price).toFixed(2)}</h4>
+            <h4 class='col-6 text-center'>$${((toppings[i].price)/100).toFixed(2)}</h4>
         </div>
         `
     }
     toppingString += `
         <div id='totalPrice' class='row d-flex'>
             <h3 class='col-6 text-center'>Total:</h3>
-            <h3 class='col-6 text-center'>$${total.toFixed(2)}</h3>
+            <h3 class='col-6 text-center'>$${(total/100).toFixed(2)}</h3>
         </div>
     `
     utilities.printToDom('final-order', toppingString)
