@@ -4,32 +4,32 @@ const veggiesArr = [
     {
         id: 'veggie0',
         type: 'Black Olives',
-        price: 0.25
+        price: 25
     }, 
     {
         id: 'veggie1',
         type: 'Onion',
-        price: 0.00
+        price: 0
     }, 
     {
         id: 'veggie2',
         type: 'Sundried Tomato',
-        price: 0.75
+        price: 75
     }, 
     {
         id: 'veggie3',
         type: 'Spinach',
-        price: 0.50
+        price: 50
     }, 
     {
         id: 'veggie4',
         type: 'Banana Peppers',
-        price: 0.50
+        price: 50
     }, 
     {
         id: 'veggie5',
         type: 'Artichoke',
-        price: 0.75
+        price: 75
     }
 ];
 
